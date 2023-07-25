@@ -1,11 +1,11 @@
 import React from "react"
 import { Switch, Route } from "react-router-dom"
-import NavBar from "./components/NavBar"
-import Home from "./components/Home"
-import About from "./components/About"
-import Projects from "./components/Projects"
+import NavBar from "./NavBar"
+import Home from "./Home"
+import About from "./About"
+import Projects from "./Projects"
 
-import './App.css';
+import '../App.css';
 
 function App() {
   return (
@@ -13,18 +13,19 @@ function App() {
       <h1>Hello World!</h1>
       <NavBar />
       <Switch>
-        <Route exact path="/">
-          <Home/>
-        </Route>
-        <Route exact path="/About">
+        <Route exact path="/about">
           <About />
         </Route>
-        <Route exact path="/Projects">
+        <Route exact path="/projects">
           <Projects />
+        </Route>
+        <Route exact path="/">
+          <Home/>
         </Route>
       </Switch>
     </div>
   );
 }
+
 
 export default App;
