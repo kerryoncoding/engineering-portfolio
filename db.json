@@ -1,0 +1,22 @@
+{
+   "projects": [
+      {
+      "id": 1,
+      "name": "Victor Trap",
+      "description": "Battery opperated, WiFi enabled Rodent Trap",
+      "image": "http://www.kerryoncoding.com/images/victor.png"
+      },
+      {
+      "id": 2,
+      "name": "Checkpoint Antennas",
+      "description": "Neo family of RF antennas",
+      "image": "http://www.kerryoncoding.com/images/checkpt.png"
+      },
+      {
+      "id": 3,
+      "name": "Ratcho Smart Sprinkler",
+      "description": "WiFi enabled smart sprinkler system",
+      "image": "http://www.kerryoncoding.com/images/rachio.png"
+      }
+   ]
+}
