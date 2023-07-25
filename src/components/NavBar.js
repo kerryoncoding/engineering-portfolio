@@ -1,7 +1,9 @@
 import React from "react"
 
 function NavBar(){
-   <h1>NavBar</h1>
+   return (
+         <h2>NavBar</h2>
+   )
 }
 
 export default NavBar;
