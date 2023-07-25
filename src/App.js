@@ -1,5 +1,5 @@
 import React from "react"
-import {Route, Switch} from "react-router-dom"
+import { Switch, Route } from "react-router-dom"
 import NavBar from "./components/NavBar"
 import Home from "./components/Home"
 import About from "./components/About"
@@ -13,13 +13,13 @@ function App() {
       <h1>Hello World!</h1>
       <NavBar />
       <Switch>
-        <Route exact path="/about">
+        <Route exact path="/">
           <Home/>
         </Route>
-        <Route exact path="/about">
+        <Route exact path="/About">
           <About />
         </Route>
-        <Route exact path="/about">
+        <Route exact path="/Projects">
           <Projects />
         </Route>
       </Switch>
