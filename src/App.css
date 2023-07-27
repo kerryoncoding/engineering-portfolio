@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+/* STARTING MY CSS */
+.navbar {
+  margin-top: 25px;
+}
+
+.navlink {
+  padding: 10px 20px;
+  margin: 15px;
+  background-color:lightblue;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.navlink:hover {
+  background-color:blue;
+  color: white;
+
+}

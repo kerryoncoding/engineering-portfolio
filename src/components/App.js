@@ -4,13 +4,11 @@ import NavBar from "./NavBar"
 import Home from "./Home"
 import About from "./About"
 import Projects from "./Projects"
-
 import '../App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
       <NavBar />
       <Switch>
         <Route exact path="/about">
