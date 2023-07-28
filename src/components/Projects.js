@@ -1,10 +1,13 @@
 import React from "react"
 
-function Projects(){
-   const projectCard = {
 
 
-   }
+function Projects({projectList}){
+
+   console.log("here", projectList)
+//    const projectCard = projectList.map({
+//       //placeholder
+//    })
 
 
 
