@@ -1,10 +1,20 @@
-import React from "react"
+import React, {useState} from "react"
 import ProjectForm from "./ProjectForm"
 
 
 
 function Projects({projectList}){
 
+   const [showForm, setShowForm] = useState(false)
+   const [buttonText, setButtonText] = useState("Show")
+
+   function toggleForm() {
+      setShowForm(!showForm)
+      {(showForm) ? setButtonText("Show") : setButtonText("Hide")}
+      
+   }
+
+      
    console.log("here", projectList)
    const showProjects = projectList.map((item) => {
       return (
@@ -22,8 +32,9 @@ function Projects({projectList}){
          <h2>Projects</h2>
          {showProjects}
          <hr></hr>
-         <button>Show Form</button>
-         <ProjectForm />
+         <button onClick={toggleForm}>{buttonText} Form</button>
+         {(showForm) ? <ProjectForm /> : "" }
+         
       </div>
       
    )
