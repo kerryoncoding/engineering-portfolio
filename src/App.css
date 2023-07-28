@@ -54,5 +54,22 @@
 .navlink:hover {
   background-color:blue;
   color: white;
-
 }
+
+.card {
+  text-align: center;
+  border: rgb(60, 60, 60) solid 1px;
+  border-radius: 15px;
+  padding: 10px;
+  width: 400px;
+  height: 300px;
+  display: inline-grid;
+  margin: 10px 10px; 
+}
+
+.card-image {
+  justify-self: center;
+  height: 150px;
+  width: auto;
+}
+

@@ -5,11 +5,10 @@ function ProjectCard({item}){
 
 
    return(
-      <div>
+      <div className="card">
          <h2>{item.name}</h2>
-         <img src={item.image}></img>
+         <img src={item.image} className="card-image"></img>
          <p>{item.description}</p>
-
       </div>
       
    )
