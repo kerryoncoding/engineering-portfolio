@@ -1,19 +1,26 @@
 import React from "react"
+import ProjectCard from "./ProjectCard"
 
 
 
 function Projects({projectList}){
 
    console.log("here", projectList)
-//    const projectCard = projectList.map({
-//       //placeholder
-//    })
+   const showProjects = projectList.map((item) => {
+      return (
+         <ProjectCard
+         item= {item}
+         key={item.id}
+         />
+      )
+   })
 
 
 
    return (
       <div>
          <h2>Projects</h2>
+         {showProjects}
          <hr></hr>
          <button>Show Form</button>
       </div>
