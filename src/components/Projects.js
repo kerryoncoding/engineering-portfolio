@@ -1,5 +1,5 @@
 import React from "react"
-import ProjectCard from "./ProjectCard"
+import ProjectForm from "./ProjectForm"
 
 
 
@@ -8,13 +8,13 @@ function Projects({projectList}){
    console.log("here", projectList)
    const showProjects = projectList.map((item) => {
       return (
-         <ProjectCard
-         item= {item}
-         key={item.id}
-         />
+            <div className="card">
+               <h2>{item.name}</h2>
+               <img src={item.image} className="card-image"></img>
+               <p>{item.description}</p>
+            </div>
       )
    })
-
 
 
    return (
@@ -23,6 +23,7 @@ function Projects({projectList}){
          {showProjects}
          <hr></hr>
          <button>Show Form</button>
+         <ProjectForm />
       </div>
       
    )
