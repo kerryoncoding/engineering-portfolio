@@ -3,7 +3,7 @@ import React from "react"
 function About(){
    return (
       <div className="about-container">
-         <h2>About</h2>
+         <h2>ABOUT</h2>
          <p>I have a strong background in mechanical engineering and have been developing consumer, industrial and medical products for over 15 years.  I have touched on all aspects of product development from initial concept through to manufacturing. It brings me joy to see a design evolve into a product.</p>
          <div className="skill-list">
             <h3>Skills:</h3>

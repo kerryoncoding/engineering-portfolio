@@ -79,6 +79,7 @@ nav a.active {
   border-radius: 10px;
   max-width: 400px;
   margin: 15px;
+  box-shadow: 6px 6px 8px rgba(138, 138, 138, 0.3);
 }
 
 /* ABOUT */
@@ -107,6 +108,7 @@ nav a.active {
 .card {
   text-align: center;
   border: rgb(60, 60, 60) solid 1px;
+  box-shadow: 6px 6px 8px rgba(138, 138, 138, 0.3);
   border-radius: 15px;
   padding: 10px;
   width: 400px;
@@ -136,7 +138,7 @@ nav a.active {
 }
 
 .breakline {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 25px;
   max-width: 80%
 }
@@ -145,7 +147,8 @@ nav a.active {
 
 .formToggleButton {
   padding: 10px 20px;
-  margin: 30px;
+  margin-top: 2%;
+  margin-bottom: 70px;
   background-color: #E4F1FE;
   font-size: 20px;
   border: none;
@@ -162,16 +165,21 @@ nav a.active {
 .formContainer {
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
   margin-bottom: 50px;
   max-width: 400px;
   border: rgb(60, 60, 60) solid 1px;
   border-radius: 15px;
 }
 
+.formContainer h2 {
+  margin-top: 35px;
+}
+
 .projectForm {
   margin-bottom: 50px;
 }
+
+.formContainer
 
 .projectForm div {
   margin-bottom: 20px;
@@ -188,7 +196,7 @@ nav a.active {
 
 .projectForm Button {
   padding: 10px 20px;
-  margin: 10px;
+  margin-top: 10px;
   background-color: #E4F1FE;
   font-size: 20px;
   border: none;

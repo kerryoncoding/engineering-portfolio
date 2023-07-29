@@ -33,7 +33,7 @@ function Projects({projectList, setProjectList, deleteItem}){
 
    return (
       <div className="card-container">
-         <h2>Projects</h2>
+         <h2>PROJECTS</h2>
          {showProjects}
          <hr className="breakline" />
          <button onClick={toggleForm} className="formToggleButton">{buttonText} Form</button>
