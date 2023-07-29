@@ -8,7 +8,21 @@ function ProjectForm(){
 
    function handleForm(e){
       e.preventDefault()
-      console.log(name, description, image)
+      let newProject = {
+         name: name,
+         description: description,
+         image: image
+      }
+      fetch("http://localhost:3000/projects", {
+         method: "POST",
+         headers: {
+            "Content-Type":"application/json"
+         },
+         body: JSON.stringify(newProject)
+      })
+      .then(res => res.json())
+      .then(data => console.log(data))
+      
    }
 
    return (
