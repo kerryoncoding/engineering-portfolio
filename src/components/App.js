@@ -17,6 +17,10 @@ function App() {
     .then(data => setProjectList(data))
   },[])
 
+  function deleteItem(item){
+    console.log("dd", item)
+  }
+
   
   return (
     <div className="App">
@@ -26,7 +30,7 @@ function App() {
           <About />
         </Route>
         <Route exact path="/projects">
-          <Projects projectList={projectList} setProjectList={setProjectList} />
+          <Projects projectList={projectList} setProjectList={setProjectList} deleteItem={deleteItem} />
         </Route>
         <Route exact path="/">
           <Home/>

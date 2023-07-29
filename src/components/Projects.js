@@ -3,7 +3,7 @@ import ProjectForm from "./ProjectForm"
 
 
 
-function Projects({projectList, setProjectList}){
+function Projects({projectList, setProjectList, deleteItem}){
 
    const [showForm, setShowForm] = useState(false)
    const [buttonText, setButtonText] = useState("Show")
@@ -11,14 +11,19 @@ function Projects({projectList, setProjectList}){
    function toggleForm() {
       setShowForm(!showForm)
       {(showForm) ? setButtonText("Show") : setButtonText("Hide")}
-      
    }
+
 
    console.log("here", projectList)
    const showProjects = projectList.map((item) => {
+
+      function handleDeleteClick(){
+         deleteItem(item.id)
+      }
+      
       return (
             <div className="card" key={item.id}>
-               <button className="cardDeleteButton">X</button>
+               <button className="cardDeleteButton" onClick={handleDeleteClick}>X</button>
                <h2>{item.name}</h2>
                <img src={item.image} className="card-image"></img>
                <p>{item.description}</p>
