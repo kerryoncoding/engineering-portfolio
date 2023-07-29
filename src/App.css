@@ -38,25 +38,35 @@
 }
 
 /* STARTING MY CSS */
-.navbar {
+nav {
   margin-top: 25px;
   margin-bottom: 50px;
 }
 
-.navlink {
+
+nav a {
+  display: inline-block;
   padding: 10px 20px;
   margin: 15px;
+  text-decoration: none;
   background-color: lightblue;
   font-size: 20px;
   color: black;
   border-radius: 10px;
-  text-decoration: none;
+  transition: 0.1s;
 }
 
-.navlink:hover {
-  background-color:blue;
+nav a:hover,
+nav a:active {
   color: white;
+  background: blue;
 }
+
+nav a.active {
+  color: white;
+  background: blue;
+}
+
 
 .card {
   text-align: center;
