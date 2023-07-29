@@ -73,3 +73,13 @@
   width: auto;
 }
 
+
+.projectForm span{
+  padding: 20px;
+}
+
+.projectForm input {
+  border-radius: 4px;
+  padding: 10px;
+}
+
