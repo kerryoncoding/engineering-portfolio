@@ -31,10 +31,9 @@ function Projects({projectList}){
       <div>
          <h2>Projects</h2>
          {showProjects}
-         <hr></hr>
-         <button onClick={toggleForm}>{buttonText} Form</button>
+         <hr className="breakline" />
+         <button onClick={toggleForm} className="formButton">{buttonText} Form</button>
          {(showForm) ? <ProjectForm /> : "" }
-         
       </div>
       
    )

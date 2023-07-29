@@ -40,12 +40,14 @@
 /* STARTING MY CSS */
 .navbar {
   margin-top: 25px;
+  margin-bottom: 50px;
 }
 
 .navlink {
   padding: 10px 20px;
   margin: 15px;
   background-color: lightblue;
+  font-size: 20px;
   color: black;
   border-radius: 10px;
   text-decoration: none;
@@ -73,6 +75,30 @@
   width: auto;
 }
 
+.breakline {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  max-width: 80%
+}
+
+.formButton {
+  padding: 10px 20px;
+  margin: 15px;
+  background-color: lightblue;
+  font-size: 20px;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.formButton:hover {
+  background-color:blue;
+  color: white;
+}
+
+.projectForm {
+  margin-bottom: 100px;
+}
 
 .projectForm span{
   padding: 20px;
