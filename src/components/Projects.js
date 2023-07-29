@@ -3,7 +3,7 @@ import ProjectForm from "./ProjectForm"
 
 
 
-function Projects({projectList}){
+function Projects({projectList, setProjectList}){
 
    const [showForm, setShowForm] = useState(false)
    const [buttonText, setButtonText] = useState("Show")
@@ -14,7 +14,6 @@ function Projects({projectList}){
       
    }
 
-      
    console.log("here", projectList)
    const showProjects = projectList.map((item) => {
       return (
@@ -26,14 +25,13 @@ function Projects({projectList}){
       )
    })
 
-
    return (
       <div>
          <h2>Projects</h2>
          {showProjects}
          <hr className="breakline" />
          <button onClick={toggleForm} className="formToggleButton">{buttonText} Form</button>
-         {(showForm) ? <ProjectForm /> : "" }
+         {(showForm) ? <ProjectForm projectList={projectList} setProjectList={setProjectList}/> : "" }
       </div>
       
    )

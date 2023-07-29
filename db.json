@@ -17,6 +17,12 @@
       "name": "Ratcho Smart Sprinkler",
       "description": "WiFi enabled smart sprinkler system",
       "image": "http://www.kerryoncoding.com/images/rachio.png"
+    },
+    {
+      "name": "new project",
+      "description": "descr",
+      "image": "image here",
+      "id": 4
     }
   ]
 }

@@ -17,8 +17,7 @@ function App() {
     .then(data => setProjectList(data))
   },[])
 
-
-
+  
   return (
     <div className="App">
       <NavBar />
@@ -27,7 +26,7 @@ function App() {
           <About />
         </Route>
         <Route exact path="/projects">
-          <Projects projectList={projectList} />
+          <Projects projectList={projectList} setProjectList={setProjectList} />
         </Route>
         <Route exact path="/">
           <Home/>

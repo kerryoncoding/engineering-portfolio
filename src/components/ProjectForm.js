@@ -1,10 +1,12 @@
 import React, {useState} from "react"
 
 
-function ProjectForm(){
+function ProjectForm({projectList, setProjectList}){
    const [name, setName] = useState("")
    const [description, setDescription] = useState("")
    const [image, setImage] = useState("")
+   
+
 
    function handleForm(e){
       e.preventDefault()
@@ -21,8 +23,7 @@ function ProjectForm(){
          body: JSON.stringify(newProject)
       })
       .then(res => res.json())
-      .then(data => console.log(data))
-      
+      .then(data => setProjectList([...projectList, data]))
    }
 
    return (
