@@ -17,9 +17,8 @@ function App() {
     .then(data => setProjectList(data))
   },[])
 
+  
   function deleteItem(item){
-    console.log("dd", item)
-
     fetch(`${URL}/${item}`, {
       method: "DELETE",
     })

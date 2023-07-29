@@ -6,8 +6,6 @@ function ProjectForm({projectList, setProjectList}){
    const [description, setDescription] = useState("")
    const [image, setImage] = useState("")
    
-
-
    function handleForm(e){
       e.preventDefault()
       let newProject = {
