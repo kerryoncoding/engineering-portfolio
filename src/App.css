@@ -38,11 +38,16 @@
 }
 
 /* STARTING MY CSS */
+/* NAVBAR */
+
+body{
+  color: #153A4D
+}
+
 nav {
   margin-top: 25px;
   margin-bottom: 50px;
 }
-
 
 nav a {
   display: inline-block;
@@ -51,20 +56,21 @@ nav a {
   text-decoration: none;
   background-color: #E4F1FE;
   font-size: 20px;
-  color: black;
+  color: #153A4D;
   border-radius: 10px;
+  /* border: rgb(60, 60, 60) solid 1px; */
   transition: 0.1s;
 }
 
 nav a:hover,
 nav a:active {
   color: white;
-  background: blue;
+  background: #153A4D;
 }
 
 nav a.active {
   color: white;
-  background: blue;
+  background: #153A4D;
 }
 
 
@@ -111,7 +117,7 @@ nav a.active {
 }
 
 .formToggleButton:hover {
-  background-color:blue;
+  background-color:#153A4D;
   color: white;
 }
 
@@ -148,12 +154,12 @@ nav a.active {
   background-color: #E4F1FE;
   font-size: 20px;
   border: none;
-  color: black;
+  color: #153A4D;
   border-radius: 10px;
   text-decoration: none;
 }
 
 .projectForm Button:hover {
-  background-color:blue;
+  background-color:#153A4D;
   color: white;
 }

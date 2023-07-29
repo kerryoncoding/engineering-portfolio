@@ -14,15 +14,21 @@
     },
     {
       "id": 3,
-      "name": "Ratcho Smart Sprinkler",
+      "name": "Rachio Smart Sprinkler",
       "description": "WiFi enabled smart sprinkler system",
       "image": "http://www.kerryoncoding.com/images/rachio.png"
     },
     {
-      "name": "Draeger Transport Incubator",
-      "description": "This is used to transport neonates in ambulances and helicopters",
+      "name": "Draeger GT5400 Incubator",
+      "description": "Transport incubator for ambulances and helicopters",
       "image": "http://www.kerryoncoding.com/images/drager.png",
       "id": 4
+    },
+    {
+      "name": "Haas Laser Delivery Products",
+      "description": "Optical components for various laser applications ",
+      "image": "http://www.kerryoncoding.com/images/haas.png",
+      "id": 5
     }
   ]
 }
