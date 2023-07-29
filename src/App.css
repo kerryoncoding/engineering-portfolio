@@ -82,6 +82,21 @@ nav a.active {
   margin: 15px;
 }
 
+/* ABOUT */
+
+.about-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.skill-list {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: left;
+}
+
 .card {
   text-align: center;
   border: rgb(60, 60, 60) solid 1px;
