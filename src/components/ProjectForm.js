@@ -23,7 +23,12 @@ function ProjectForm({projectList, setProjectList}){
          body: JSON.stringify(newProject)
       })
       .then(res => res.json())
-      .then(data => setProjectList([...projectList, data]))
+      .then(data => {
+         setProjectList([...projectList, data])
+      })
+      setName("")
+      setImage("")
+      setDescription("")
    }
 
    return (
@@ -33,17 +38,17 @@ function ProjectForm({projectList, setProjectList}){
             <div>
                <label>Name: </label>
                <br />
-               <input type="text" id="name" onChange={(e)=>setName(e.target.value)}/>
+               <input type="text" id="name" value={name} onChange={(e)=>setName(e.target.value)}/>
             </div>
             <div>
                <label>Image: </label>
             <br />
-               <input type="text" id="image" onChange={(e)=>setImage(e.target.value)} />
+               <input type="text" id="image" value={image}  onChange={(e)=>setImage(e.target.value)} />
             </div>
             <div>
                <label>Description: </label>
             <br />
-               <input type="text" id="description" onChange={(e)=>setDescription(e.target.value)} />
+               <input type="text" id="description" value={description} onChange={(e)=>setDescription(e.target.value)} />
             </div>
             <div>
                <button type="submit">Submit</button>
