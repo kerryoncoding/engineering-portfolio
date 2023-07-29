@@ -81,9 +81,9 @@
   max-width: 80%
 }
 
-.formButton {
+.formToggleButton {
   padding: 10px 20px;
-  margin: 15px;
+  margin: 30px;
   background-color: lightblue;
   font-size: 20px;
   color: black;
@@ -91,13 +91,27 @@
   text-decoration: none;
 }
 
-.formButton:hover {
+.formToggleButton:hover {
   background-color:blue;
   color: white;
 }
 
+.formContainer {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  max-width: 400px;
+  border: rgb(60, 60, 60) solid 1px;
+  border-radius: 15px;
+}
+
 .projectForm {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+.projectForm div {
+  margin-bottom: 20px;
 }
 
 .projectForm span{
@@ -109,3 +123,18 @@
   padding: 10px;
 }
 
+.projectForm Button {
+  padding: 10px 20px;
+  margin: 30px;
+  background-color: lightblue;
+  font-size: 20px;
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+
+.projectForm Button:hover {
+  background-color:blue;
+  color: white;
+}

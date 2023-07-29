@@ -32,7 +32,7 @@ function Projects({projectList}){
          <h2>Projects</h2>
          {showProjects}
          <hr className="breakline" />
-         <button onClick={toggleForm} className="formButton">{buttonText} Form</button>
+         <button onClick={toggleForm} className="formToggleButton">{buttonText} Form</button>
          {(showForm) ? <ProjectForm /> : "" }
       </div>
       

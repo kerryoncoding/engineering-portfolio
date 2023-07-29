@@ -5,21 +5,27 @@ function ProjectForm(){
 
 
    return (
-      <div>
+      <div className="formContainer">
          <h2>Add A Project</h2>
          <form className="projectForm">
-            <span>
+            <div>
                <label>Name: </label>
+               <br />
                <input type="text" id="name" />
-            </span>
-            <span>
+            </div>
+            <div>
                <label>Image: </label>
+            <br />
                <input type="text" id="image" />
-            </span>
-            <span>
+            </div>
+            <div>
                <label>Description: </label>
+            <br />
                <input type="text" id="description" />
-            </span>
+            </div>
+            <div>
+               <button type="submit">Submit</button>
+            </div>
          </form>
       </div>
       
