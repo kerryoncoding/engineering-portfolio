@@ -116,6 +116,20 @@ nav a.active {
   margin: 10px 10px; 
 }
 
+.cardDeleteButton {
+  max-width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #E4F1FE;
+  border: none;
+}
+
+.cardDeleteButton:hover {
+  background-color:#153A4D;
+  color: white;
+}
+
+
 .card-image {
   justify-self: center;
   height: 150px;

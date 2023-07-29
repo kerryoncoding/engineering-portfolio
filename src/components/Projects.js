@@ -18,6 +18,7 @@ function Projects({projectList, setProjectList}){
    const showProjects = projectList.map((item) => {
       return (
             <div className="card" key={item.id}>
+               <button className="cardDeleteButton">X</button>
                <h2>{item.name}</h2>
                <img src={item.image} className="card-image"></img>
                <p>{item.description}</p>
