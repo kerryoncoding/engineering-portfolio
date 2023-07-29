@@ -97,6 +97,14 @@ nav a.active {
   text-align: left;
 }
 
+/* PROJECTS */
+
+.card-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
 .card {
   text-align: center;
   border: rgb(60, 60, 60) solid 1px;

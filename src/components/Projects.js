@@ -26,7 +26,7 @@ function Projects({projectList, setProjectList}){
    })
 
    return (
-      <div>
+      <div className="card-container">
          <h2>Projects</h2>
          {showProjects}
          <hr className="breakline" />
