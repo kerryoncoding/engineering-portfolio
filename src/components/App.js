@@ -19,6 +19,13 @@ function App() {
 
   function deleteItem(item){
     console.log("dd", item)
+
+    // fetch(`${URL}/${item}`, {
+    //   method: "DELETE",
+    // }),
+    // .then(res => res.json())
+    // .then(data=> console.log(data))
+    
   }
 
   
