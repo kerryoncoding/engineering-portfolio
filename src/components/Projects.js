@@ -25,7 +25,7 @@ function Projects({projectList, setProjectList, deleteItem}){
             <div className="card" key={item.id}>
                <button className="cardDeleteButton" onClick={handleDeleteClick}>X</button>
                <h2>{item.name}</h2>
-               <img src={item.image} className="card-image"></img>
+               <img src={item.image} className="card-image" alt={item.name}></img>
                <p>{item.description}</p>
             </div>
       )

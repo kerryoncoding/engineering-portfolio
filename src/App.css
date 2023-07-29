@@ -58,7 +58,6 @@ nav a {
   font-size: 20px;
   color: #153A4D;
   border-radius: 10px;
-  /* border: rgb(60, 60, 60) solid 1px; */
   transition: 0.1s;
 }
 
@@ -141,6 +140,8 @@ nav a.active {
   margin-bottom: 25px;
   max-width: 80%
 }
+
+/* PROJECT FORM SECTION */
 
 .formToggleButton {
   padding: 10px 20px;

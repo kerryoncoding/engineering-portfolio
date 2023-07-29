@@ -20,12 +20,15 @@ function App() {
   function deleteItem(item){
     console.log("dd", item)
 
-    // fetch(`${URL}/${item}`, {
-    //   method: "DELETE",
-    // }),
-    // .then(res => res.json())
-    // .then(data=> console.log(data))
-    
+    fetch(`${URL}/${item}`, {
+      method: "DELETE",
+    })
+    .then(res => res.json())
+    .then(data=> {
+      let updatedList = projectList.filter((data)=> data.id != item)
+      setProjectList(updatedList)
+      console.log(data)
+    })
   }
 
   
