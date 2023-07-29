@@ -18,7 +18,7 @@ function Projects({projectList}){
    console.log("here", projectList)
    const showProjects = projectList.map((item) => {
       return (
-            <div className="card">
+            <div className="card" key={item.id}>
                <h2>{item.name}</h2>
                <img src={item.image} className="card-image"></img>
                <p>{item.description}</p>

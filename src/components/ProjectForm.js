@@ -1,7 +1,11 @@
-import React from "react"
+import React, {useState} from "react"
+
 
 
 function ProjectForm(){
+   const [name, setName] = useState("")
+   const [description, setDescription] = useState("")
+   const [image, setImage] = useState("")
 
 
    return (
