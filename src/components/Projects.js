@@ -2,7 +2,6 @@ import React, {useState} from "react"
 import ProjectForm from "./ProjectForm"
 
 
-
 function Projects({projectList, setProjectList, deleteItem}){
 
    const [showForm, setShowForm] = useState(false)
@@ -14,13 +13,13 @@ function Projects({projectList, setProjectList, deleteItem}){
    }
 
 
-   console.log("here", projectList)
    const showProjects = projectList.map((item) => {
 
       function handleDeleteClick(){
          deleteItem(item.id)
       }
       
+
       return (
             <div className="card" key={item.id}>
                <button className="cardDeleteButton" onClick={handleDeleteClick}>X</button>
@@ -31,6 +30,7 @@ function Projects({projectList, setProjectList, deleteItem}){
       )
    })
 
+
    return (
       <div className="card-container">
          <h2>PROJECTS</h2>
@@ -39,8 +39,8 @@ function Projects({projectList, setProjectList, deleteItem}){
          <button onClick={toggleForm} className="formToggleButton">{buttonText} Form</button>
          {(showForm) ? <ProjectForm projectList={projectList} setProjectList={setProjectList}/> : "" }
       </div>
-      
    )
 }
+
 
 export default Projects;

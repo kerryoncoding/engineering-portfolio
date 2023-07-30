@@ -26,7 +26,6 @@ function App() {
     .then(data=> {
       let updatedList = projectList.filter((data)=> data.id != item)
       setProjectList(updatedList)
-      console.log(data)
     })
   }
 

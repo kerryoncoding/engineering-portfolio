@@ -2,10 +2,12 @@ import React, {useState} from "react"
 
 
 function ProjectForm({projectList, setProjectList}){
+
    const [name, setName] = useState("")
    const [description, setDescription] = useState("")
    const [image, setImage] = useState("")
    
+
    function handleForm(e){
       e.preventDefault()
       let newProject = {
@@ -28,6 +30,7 @@ function ProjectForm({projectList, setProjectList}){
       setImage("")
       setDescription("")
    }
+
 
    return (
       <div className="formContainer">
@@ -53,7 +56,6 @@ function ProjectForm({projectList, setProjectList}){
             </div>
          </form>
       </div>
-      
    )  
 }
 

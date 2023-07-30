@@ -33,7 +33,6 @@ function About(){
                   Thermoforming
                </li>
             </ul>
-
          </div>
       </div>
       
