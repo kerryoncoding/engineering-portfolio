@@ -1,12 +1,36 @@
 import React, {useState} from "react"
 
 
-function ProjectForm({projectList, setProjectList}){
+function ProjectForm({addProject}){
 
    const [name, setName] = useState("")
    const [description, setDescription] = useState("")
    const [image, setImage] = useState("")
    
+
+   // function handleForm(e){
+   //    e.preventDefault()
+   //    let newProject = {
+   //       name: name,
+   //       description: description,
+   //       image: image
+   //    }
+
+   //    fetch("http://localhost:3000/projects", {
+   //       method: "POST",
+   //       headers: {
+   //          "Content-Type":"application/json"
+   //       },
+   //       body: JSON.stringify(newProject)
+   //    })
+   //    .then(res => res.json())
+   //    .then(data => {
+   //       setProjectList([...projectList, data])
+   //    })
+   //    setName("")
+   //    setImage("")
+   //    setDescription("")
+   // }
 
    function handleForm(e){
       e.preventDefault()
@@ -15,22 +39,29 @@ function ProjectForm({projectList, setProjectList}){
          description: description,
          image: image
       }
-      fetch("http://localhost:3000/projects", {
-         method: "POST",
-         headers: {
-            "Content-Type":"application/json"
-         },
-         body: JSON.stringify(newProject)
-      })
-      .then(res => res.json())
-      .then(data => {
-         setProjectList([...projectList, data])
-      })
-      setName("")
-      setImage("")
-      setDescription("")
-   }
+      
+      addProject(newProject)
 
+
+   //    fetch("http://localhost:3000/projects", {
+   //       method: "POST",
+   //       headers: {
+   //          "Content-Type":"application/json"
+   //       },
+   //       body: JSON.stringify(newProject)
+   //    })
+   //    .then(res => res.json())
+   //    .then(data => {
+   //       setProjectList([...projectList, data])
+   //    })
+   //    setName("")
+   //    setImage("")
+   //    setDescription("")
+
+   setName("")
+   setImage("")
+   setDescription("")
+   }
 
    return (
       <div className="formContainer">

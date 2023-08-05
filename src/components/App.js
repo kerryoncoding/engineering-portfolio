@@ -29,7 +29,22 @@ function App() {
     })
   }
 
-  
+  function addProject(newProject){
+    fetch("http://localhost:3000/projects", {
+      method: "POST",
+      headers: {
+         "Content-Type":"application/json"
+      },
+      body: JSON.stringify(newProject)
+   })
+   .then(res => res.json())
+   .then(data => {
+      setProjectList([...projectList, data])
+   })
+   
+  }
+
+
   return (
     <div className="App">
       <NavBar />
@@ -38,7 +53,8 @@ function App() {
           <About />
         </Route>
         <Route exact path="/projects">
-          <Projects projectList={projectList} setProjectList={setProjectList} deleteItem={deleteItem} />
+          {/* <Projects projectList={projectList} setProjectList={setProjectList} deleteItem={deleteItem} /> */}
+          <Projects projectList={projectList} addProject={addProject} deleteItem={deleteItem} />
         </Route>
         <Route exact path="/">
           <Home/>

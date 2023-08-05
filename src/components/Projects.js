@@ -3,7 +3,7 @@ import ProjectForm from "./ProjectForm"
 import ProjectItem from "./ProjectItem"
 
 
-function Projects({projectList, setProjectList, deleteItem}){
+function Projects({projectList, deleteItem, addProject}){
 
    const [showForm, setShowForm] = useState(false)
    const [buttonText, setButtonText] = useState("Show")
@@ -29,7 +29,7 @@ function Projects({projectList, setProjectList, deleteItem}){
          {showProjects}
          <hr className="breakline" />
          <button onClick={toggleForm} className="formToggleButton">{buttonText} Form</button>
-         {(showForm) ? <ProjectForm projectList={projectList} setProjectList={setProjectList}/> : "" }
+         {(showForm) ? <ProjectForm projectList={projectList} addProject={addProject} /> : "" }
       </div>
    )
 }
