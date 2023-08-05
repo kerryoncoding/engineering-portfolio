@@ -14,12 +14,10 @@ function ProjectForm({addProject}){
          description: description,
          image: image
       }
-      
       addProject(newProject)
-
-   setName("")
-   setImage("")
-   setDescription("")
+      setName("")
+      setImage("")
+      setDescription("")
    }
 
    return (

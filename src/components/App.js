@@ -29,6 +29,7 @@ function App() {
     })
   }
 
+
   function addProject(newProject){
     fetch("http://localhost:3000/projects", {
       method: "POST",
@@ -41,9 +42,9 @@ function App() {
    .then(data => {
       setProjectList([...projectList, data])
    })
-   
   }
 
+  
   return (
     <div className="App">
       <NavBar />
