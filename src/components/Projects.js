@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import ProjectForm from "./ProjectForm"
+import ProjectItem from "./ProjectItem"
 
 
 function Projects({projectList, setProjectList, deleteItem}){
@@ -14,19 +15,10 @@ function Projects({projectList, setProjectList, deleteItem}){
 
 
    const showProjects = projectList.map((item) => {
-
-      function handleDeleteClick(){
-         deleteItem(item.id)
-      }
-      
-
       return (
-            <div className="card" key={item.id}>
-               <button className="cardDeleteButton" onClick={handleDeleteClick}>X</button>
-               <h2>{item.name}</h2>
-               <img src={item.image} className="card-image" alt={item.name}></img>
-               <p>{item.description}</p>
-            </div>
+         <ProjectItem 
+         item = {item}
+         deleteItem= {deleteItem} />
       )
    })
 
