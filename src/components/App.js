@@ -52,7 +52,6 @@ function App() {
           <About />
         </Route>
         <Route exact path="/projects">
-          {/* <Projects projectList={projectList} setProjectList={setProjectList} deleteItem={deleteItem} /> */}
           <Projects projectList={projectList} addProject={addProject} deleteItem={deleteItem} />
         </Route>
         <Route exact path="/">
