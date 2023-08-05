@@ -15,9 +15,11 @@ function Projects({projectList, deleteItem, addProject}){
 
 
    const showProjects = projectList.map((item) => {
+
       return (
          <ProjectItem 
          item = {item}
+         key = {item.id}
          deleteItem= {deleteItem} />
       )
    })
