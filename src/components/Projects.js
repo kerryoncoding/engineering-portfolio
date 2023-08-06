@@ -31,7 +31,7 @@ function Projects({projectList, deleteItem, addProject}){
          {showProjects}
          <hr className="breakline" />
          <button onClick={toggleForm} className="formToggleButton">{buttonText} Form</button>
-         {(showForm) ? <ProjectForm projectList={projectList} addProject={addProject} /> : "" }
+         {(showForm) ? <ProjectForm addProject={addProject} /> : "" }
       </div>
    )
 }
